@@ -7,10 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Multipage Education Website Using HTML, CSS, & JavaScript</title>
 
+  <!-- ICONSCOUT CDN -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+  <!-- GOOGLE FONTS (MONTSERRAT) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <!-- =========================== NAVBAR =========================== -->
   <nav>
     <div class="container nav__container">
       <a href="index.html">
@@ -22,8 +32,32 @@
         <li><a href="courses.html">Courses</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
     </div>
   </nav>
+  <!-- =========================== END OF NAVBAR 
+  =========================== -->
+
+  <!-- =========================== HEADER =========================== -->
+  <header>
+    <div class="container header__container">
+      <div class="header__left">
+        <h1>Grow your skills to advance your career path</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic aliquid veniam iusto culpa odit quae
+          quisquam minus incidunt libero!</p>
+        <a href="courses.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="header__right">
+        <div class="header__right-image">
+          <img src="./images/header.svg" alt="header image">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- =========================== END OF HEADER 
+  =========================== -->
+
 
 </body>
 
