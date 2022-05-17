@@ -10,6 +10,9 @@
   <!-- ICONSCOUT CDN -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
+  <!-- SWIPER JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
   <!-- GOOGLE FONTS (MONTSERRAT) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -278,6 +281,92 @@
 
 
 
+  <!-- =========================== SECTION: TESTIMONIALS =========================== -->
+  <section class="container testimonials__container mySwiper">
+    <h2>Students' Testimonials</h2>
+    <div class="swiper-wrapper">
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="./images/avatar1.jpg" alt="Testimonial Avatar">
+        </div>
+        <div class="testimonial__info">
+          <h5>Diana Ayi</h5>
+          <small>Student</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab nisi quod dolore quo explicabo cumque
+            aliquam doloremque aut consectetur repellat itaque amet repudiandae iste natus dolorum delectus? Earum,
+            quia.</p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="./images/avatar2.jpg" alt="Testimonial Avatar">
+        </div>
+        <div class="testimonial__info">
+          <h5>Ernest Achiever</h5>
+          <small>Web Developer</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab nisi quod dolore quo explicabo cumque
+            aliquam doloremque aut consectetur repellat itaque amet repudiandae iste natus dolorum delectus? Earum,
+            quia.</p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="./images/avatar3.jpg" alt="Testimonial Avatar">
+        </div>
+        <div class="testimonial__info">
+          <h5>Edem Quist</h5>
+          <small>Student</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab nisi quod dolore quo explicabo cumque
+            aliquam doloremque aut consectetur repellat itaque amet repudiandae iste natus dolorum delectus? Earum,
+            quia.</p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="./images/avatar4.jpg" alt="Testimonial Avatar">
+        </div>
+        <div class="testimonial__info">
+          <h5>Hajia Bintu</h5>
+          <small>Student</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab nisi quod dolore quo explicabo cumque
+            aliquam doloremque aut consectetur repellat itaque amet repudiandae iste natus dolorum delectus? Earum,
+            quia.</p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="./images/avatar5.jpg" alt="Testimonial Avatar">
+        </div>
+        <div class="testimonial__info">
+          <h5>Jane Doe</h5>
+          <small>Student</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab nisi quod dolore quo explicabo cumque
+            aliquam doloremque aut consectetur repellat itaque amet repudiandae iste natus dolorum delectus? Earum,
+            quia.</p>
+        </div>
+      </article>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- =========================== END OF SECTION: TESTIMONIALS
+  =========================== -->
+
+
   <!-- =========================== SECTION: FAQs =========================== -->
 
 
@@ -288,13 +377,26 @@
 
   <!-- =========================== END OF SECTION: FAQs
   =========================== -->
-  <!-- =========================== SECTION: FAQs =========================== -->
 
-
-  <!-- =========================== END OF SECTION: FAQs
-  =========================== -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when window width is >= 600px
+      breakpoints: {
+        600: {
+          slidesPerView: 2
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
