@@ -105,13 +105,16 @@ img {
 }
 
 /* =========================== NAVBAR =========================== */
+.logo {
+  height: 1.9rem;
+}
 nav {
   background: transparent;
   width: 100vw;
   height: 5rem;
   position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: 101;
 }
 
 /* change navbar styles on scroll using JavaScript */
@@ -269,6 +272,11 @@ header {
   font-size: 0.9rem;
 }
 
+.course__more {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
 /* =========================== SECTION: FAQs =========================== */
 .faqs {
   background: var(--color-bg1);
@@ -354,11 +362,25 @@ header {
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: -1.5rem;
   transform: rotate(45deg);
 }
+/* =========================== SECTION: OVERLAY =========================== */
 
+body {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 100;
+  display: none;
+}
 /* =========================== SECTION: FOOTER =========================== */
 footer {
   background: var(--color-bg1);

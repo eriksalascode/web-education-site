@@ -26,11 +26,13 @@ faqs.forEach((faq) => {
 const menu = document.querySelector(".nav__menu");
 const menuBtn = document.querySelector("#open-menu-btn");
 const closeBtn = document.querySelector("#close-menu-btn");
+const overlay = document.querySelector(".overlay");
 
 menuBtn.addEventListener("click", () => {
   menu.style.display = "flex";
   closeBtn.style.display = "inline-block";
   menuBtn.style.display = "none";
+  overlay.style.display = "block";
   console.log("here");
 });
 
@@ -39,6 +41,9 @@ const closeNav = () => {
   menu.style.display = "none";
   closeBtn.style.display = "none";
   menuBtn.style.display = "inline-block";
+  overlay.style.display = "none";
 };
 
 closeBtn.addEventListener("click", closeNav);
+//clicking outside nav menu will also close nav menu
+overlay.addEventListener("click", closeNav);
