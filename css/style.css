@@ -105,13 +105,13 @@ img {
 }
 
 /* =========================== NAVBAR =========================== */
-.logo__container {
+/* .logo__container {
   height: 34px;
   width: 170px;
-}
+} */
 
 .logo {
-  width: 100%;
+  height: 2rem;
 }
 nav {
   background: transparent;
