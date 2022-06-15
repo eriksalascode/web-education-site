@@ -113,7 +113,8 @@ img {
 .logo {
   /* width: 170px;
   height: auto; */
-  height: 1.7rem;
+  /* height: 1rem; */
+  width: 10rem;
 }
 nav {
   background: transparent;
