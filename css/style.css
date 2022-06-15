@@ -111,7 +111,9 @@ img {
 } */
 
 .logo {
-  height: 34px;
+  /* width: 170px;
+  height: auto; */
+  height: 1.7rem;
 }
 nav {
   background: transparent;
@@ -397,6 +399,10 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
+}
+
+.footer__logo img {
+  width: 100px;
 }
 
 .footer__container > div h4 {
